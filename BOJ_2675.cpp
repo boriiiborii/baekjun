@@ -3,17 +3,27 @@
 
 using namespace std;
 
+
 int main()
 {
     int num;
-    cin >> num;
+    do
+    {
+        cin >> num;
+    }while (num > 1001);
+    
+ 
     
     for(int i = 0; i < num; i++)
     {
         int r;
         string str;
 
-        cin >> r;
+        do
+        {
+            cin >> r;
+        }while (r > 8 || r < 1);
+
         cin >> str;
 
         for(int j = 0 ; j < str.size(); j++)
@@ -23,6 +33,7 @@ int main()
               cout << str[j];
             }
         }
+        cout << "\n";
     }
     return 0;
 }
