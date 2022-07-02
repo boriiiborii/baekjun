@@ -7,9 +7,9 @@ int main(void)
     int time;
 
     cin >> time;
-    char num[time];
+    string num;
 
-    scanf("%s",&num);
+    cin >> num;
 
     int sum = 0;
     for(int i = 0; i < time ; i ++)
@@ -18,4 +18,6 @@ int main(void)
     }
 
     cout << sum;
+    
+    return 0;
 }

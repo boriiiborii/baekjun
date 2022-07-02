@@ -1,46 +1,35 @@
 #include <iostream>
+#include <string>
 using namespace std;
-
-int sqr (int a)
-{
-    a *= a;
-
-    return a;
-}
-
 
 int main(void)
 {
-    int input[3];
-
-    for(int i = 0; input[0]!=0 || input[1]!=0 || input[2]!=0; i++)
+    string input;
+    
+    while(1)
     {
-        
-        for(int j = 0; j < 3; j++)
-        {
-            cin >> input[j];
-        }
+        cin >> input;
+        if(input[0] == '0')
+            return 0;
 
-        if(input[0] == 0 && input[1] == 0 && input[2] == 0)
-            break;
-
-        for(int j = 0; j < 2; j++)
+        int size = input.size();
+        for(int i = 0; i < size ; i++)
         {
-            if(input[j] > input[j+1])
+            if(input[i] != input[size-i-1])
             {
-                int temp = input[j];
-                input[j] = input[j+1];
-                input[j+1] = input[j];
+                cout << "no" << "\n";
+                break;
             }
-        }
-
-        if(sqr(input[2]) == sqr(input[0])+ sqr(input[1]))
-        {
-            cout << "right" << "\n";
-        }
-        else
-        {
-            cout << "wrong" << "\n";
+            else
+            {
+                if(i+1 == (size+1)/2)
+                {
+                    cout << "yes" << "\n";
+                    break;
+                }
+                else
+                    continue;
+            }
         }
     }
     return 0;
