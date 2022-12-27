@@ -4,7 +4,6 @@
 //
 //  Created by leehwajin on 2022/12/24.
 //
-
 import Foundation
 
 let n = Int(readLine()!)!
@@ -42,7 +41,6 @@ for times in 1...n{
     }
     
     //본격적으로 제발
-
     for i in 0...input.endIndex-1 {
         arr[input1[i]] += 1
         if arr[input1[i]] != 1{

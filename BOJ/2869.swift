@@ -4,7 +4,6 @@
 //
 //  Created by leehwajin on 2022/12/23.
 //
-
 import Foundation
 
 let input = readLine()!.split(separator: " ").map { Int(String($0))! }
@@ -16,7 +15,3 @@ if (((v-b)%(a-b)) != 0){
     day += 1
 }
 print(day)
-
-
-
-
