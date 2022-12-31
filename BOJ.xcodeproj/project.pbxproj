@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		DB3813D7295F5F4B0073D143 /* 2231.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2231.swift; sourceTree = "<group>"; };
 		DB3813D8296078D80073D143 /* 11650.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11650.swift; sourceTree = "<group>"; };
+		DB3813D92960CDC70073D143 /* 10845.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10845.swift; sourceTree = "<group>"; };
 		DB3956C9295B772D004627A6 /* 1018.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1018.swift; sourceTree = "<group>"; };
 		DB3956CB295C5477004627A6 /* 1181.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1181.swift; sourceTree = "<group>"; };
 		DB3956CD295C8887004627A6 /* 10828.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10828.swift; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 				DB3956D3295DB07E004627A6 /* 1929.swift */,
 				DB3956D4295F10B0004627A6 /* 7568.swift */,
 				DB3813D7295F5F4B0073D143 /* 2231.swift */,
+				DB3813D92960CDC70073D143 /* 10845.swift */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
