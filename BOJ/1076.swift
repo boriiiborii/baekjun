@@ -29,7 +29,7 @@ var t = 0
 
 //매칭
 for i in 0...9{
-    if arr[i].contains(firstColor){
+    if arr[i].contains(firstColor){//contains O(n) 딕셔너리를 키로 쓰면 시간복잡도가 O(1) 더빠름
         f = i
     }
     if arr[i].contains(secondColor){
