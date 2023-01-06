@@ -134,6 +134,7 @@ while true{
                     stack.remove(at: findIndex(arr: stack, word: "("))
                 }else{
                     stack.append("noerr")
+                    print("no")
                     break
                 }
             case "]" :
