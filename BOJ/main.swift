@@ -100,49 +100,59 @@
 
 
 import Foundation
-//2164 카드2
-let num = Int(readLine()!)!
-var arr =  Array(1...num)
-var temp = 0
-
-if num == 1 {print(1)}
-else{
-    while true{
-        arr[temp] = 0
-        arr.append(arr[temp+1])
-        arr[temp+1] = 0
-        if arr[arr.count-2] == 0 {print(arr.last!); break}
-        temp += 2
+//4949 균형잡힌세상
+func findIndex(arr:[String], word:String) -> Int{
+    if arr.contains(word){
+        for i in (0..<arr.endIndex).reversed(){
+            if arr[i] == word{
+                return i
+            }
+        }
     }
+    return -1
 }
 
-//
-//import Foundation
-//class Node<T> {
-//    var data: T?
-//    var next: Node?
-//
-//    init(data: T?, next: Node? = nil){
-//        self.data = data
-//        self.next = next
-//    }
-//}
-//
-//class LinkedList<T> {
-//    private var head: Node<T>?
-//}
-//
-//func append(data: T?) {
-//
-//    //head가 없는 경우 Node를 생성 후 head로 지정해준다
-//    if head == nil {
-//        head = Node(data: data)
-//        return
-//    }
-//
-//    var node = head
-//    while node?.next != nil {
-//        node = node?.next
-//    }
-//    node?.next = Node(data: data)
-//}
+
+while true{
+    var input = Array(readLine()!)
+    var stack = [String]()
+    if input[0] == "." && input.count == 1{
+        break
+    }
+    
+    for i in 0..<input.count{
+        if stack.contains("noerr"){
+            break
+        }else{
+            switch input[i]{
+            case "(" :
+                stack.append("(")
+            case "[" :
+                stack.append("[")
+            case ")" :
+                if (stack.contains("(")) && (findIndex(arr: stack, word: "(") > findIndex(arr: stack, word: "[")) {
+                    stack.remove(at: findIndex(arr: stack, word: "("))
+                }else{
+                    stack.append("noerr")
+                    break
+                }
+            case "]" :
+                if (stack.contains("[")) && (findIndex(arr: stack, word: "[") > findIndex(arr: stack, word: "(")) {
+                    stack.remove(at: findIndex(arr: stack, word: "["))
+                }else{
+                    stack.append("noerr")
+                    print("no")
+                    break
+                }
+            default :
+                break
+            }
+        }
+        }
+        
+    if (stack.isEmpty) && (!stack.contains("noerr")) {
+        print("yes")
+    }else if !stack.contains("noerr"){
+        print("no")
+    }
+}
