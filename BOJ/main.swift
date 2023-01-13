@@ -98,42 +98,44 @@
 //    print(plus)
 //}
 
-import Foundation
-//1966 프린터 큐
-var n = Int(readLine()!)!
-var queue = [Int]()
-for _ in 0..<n{
-    let input = readLine()!.split(separator: " ").map{Int(String($0))!}
-    var arr = Array(repeating: Array(repeating: 0, count: 2), count: input[0])
-    let num = readLine()!.split(separator: " ").map{Int(String($0))!}
-    if input[0] == 0{
-        print(0)
-        continue
-    }else if input[0] == 1{
-        print(1)
-        continue
-    }else{
-        for i in 0..<input[0]{
-            arr[i][1] = num[i]
-        }
-        
-        arr[input[1]][0] = 2
-        
-        for i in 0...100{
-            let a = i%input[0]
-            if (arr.flatMap{$0}.max()! == arr[a][1]) && (arr[a][0] != 1) {
-                if arr[a][0] == 2{
-                    print(queue.count+1)
-                    break
-                }
-                arr[a][0] = 1
-                queue.append(a)
-                arr.remove(at: a)
-                if queue.count == input[0] {break}
-            }
-        }
-        
-    }
+//import Foundation
+////1966 프린터 큐
+//var n = Int(readLine()!)!
+//var queue = [Int]()
+//for _ in 0..<n{
+//    let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+//    var arr = Array(repeating: Array(repeating: -1, count: 2), count: input[0])
+//    let num = readLine()!.split(separator: " ").map{Int(String($0))!}
+//    if input[0] == 0{
+//        print(0)
+//        continue
+//    }else if input[0] == 1{
+//        print(1)
+//        continue
+//    }else{
+//        for i in 0..<input[0]{
+//            arr[i][1] = num[i]
+//        }
+//
+//        arr[input[1]][0] = -2
+//
+//        for i in 0...100{
+//            let a = i%input[0]
+//            var flatArr = arr.sorted()
+//            if (flatArr.flatMap{$0}.max()! == arr[a][1]) && (arr[a][0] != -3) {
+//                if arr[a][0] == -2{
+//                    print(queue.count+1)
+//                    break
+//                }
+//                arr[a][0] = -3
+//                queue.append(a)
+//                flatArr.remove(at: 0)
+//                if queue.count == input[0] {break}
+//            }
+//        }
+//
+//    }
+//
+//}
+//
 
-}
-    
