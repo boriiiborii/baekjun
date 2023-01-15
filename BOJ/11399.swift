@@ -1,6 +1,10 @@
-
-//  main.swift
+//
+//  11399.swift
 //  BOJ
+//
+//  Created by leehwajin on 2023/01/16.
+//
+
 import Foundation
 //11399 ATM
 _ = Int(readLine()!)!
