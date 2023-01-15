@@ -23,11 +23,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB224A2E2974663000EC1478 /* 1181.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1181.swift; sourceTree = "<group>"; };
 		DB3813D7295F5F4B0073D143 /* 2231.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2231.swift; sourceTree = "<group>"; };
 		DB3813D8296078D80073D143 /* 11650.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11650.swift; sourceTree = "<group>"; };
 		DB3813D92960CDC70073D143 /* 10845.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10845.swift; sourceTree = "<group>"; };
 		DB3956C9295B772D004627A6 /* 1018.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1018.swift; sourceTree = "<group>"; };
-		DB3956CB295C5477004627A6 /* 1181.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1181.swift; sourceTree = "<group>"; };
 		DB3956CD295C8887004627A6 /* 10828.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10828.swift; sourceTree = "<group>"; };
 		DB3956CF295C9878004627A6 /* 9012.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9012.swift; sourceTree = "<group>"; };
 		DB3956D0295CE087004627A6 /* 1920.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1920.swift; sourceTree = "<group>"; };
@@ -105,7 +105,6 @@
 				DB4308032956EBC800D53539 /* 1316.swift */,
 				DBC3C248295B217D00ABB8FE /* 2839.swift */,
 				DB3956C9295B772D004627A6 /* 1018.swift */,
-				DB3956CB295C5477004627A6 /* 1181.swift */,
 				DB3956CD295C8887004627A6 /* 10828.swift */,
 				DB3956CF295C9878004627A6 /* 9012.swift */,
 				DB3956D0295CE087004627A6 /* 1920.swift */,
@@ -120,6 +119,7 @@
 				DB61FC3129671A21006D3CAC /* 2164.swift */,
 				DBB61C3D2969860700E5E08F /* 11866.swift */,
 				DB4D94BF296DA65E00ABDEE3 /* 2108.swift */,
+				DB224A2E2974663000EC1478 /* 1181.swift */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
