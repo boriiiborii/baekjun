@@ -49,6 +49,7 @@
 		DB8C9C28295323EF00B2FE9F /* BOJ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BOJ; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8C9C2B295323EF00B2FE9F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DB8C9C322953243800B2FE9F /* 10817.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10817.swift; sourceTree = "<group>"; };
+		DBA7BB9A2978260D006CBEBD /* leet7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leet7.swift; sourceTree = "<group>"; };
 		DBB61C3929686F0B00E5E08F /* 4949.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4949.swift; sourceTree = "<group>"; };
 		DBB61C3A2968776E00E5E08F /* 11651.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11651.swift; sourceTree = "<group>"; };
 		DBB61C3B29696E0400E5E08F /* 10773.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10773.swift; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 				DB224A2E2974663000EC1478 /* 1181.swift */,
 				DB224A2F2974692600EC1478 /* 11399.swift */,
 				DBCDC0282976E81E0032817F /* 2775.swift */,
+				DBA7BB9A2978260D006CBEBD /* leet7.swift */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";

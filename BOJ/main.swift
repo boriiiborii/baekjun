@@ -107,3 +107,11 @@
 //var st = arr.joined()
 //var str += "\(st)\n
 
+//import Foundation
+////1676 팩토리얼0의갯수
+//let input = Int(readLine()!)!
+//var a = input / 100
+//
+//print(input/5 + 2*a)
+//
+
