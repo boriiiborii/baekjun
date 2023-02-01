@@ -115,3 +115,39 @@
 //print(input/5 + 2*a)
 //
 
+//import Foundation
+////11723 집합
+//let n = Int(readLine()!)!
+//var arr = Array(repeating: false, count: 21)
+//for _ in 0..<n{
+//    let input = readLine()!.split(separator: " ").map{String($0)}
+//    let message = input[0]
+//    switch message{
+//    case "add" :
+//        arr[Int(input[1])!] = true
+//    case "remove" :
+//        arr[Int(input[1])!] = false
+//    case "check" :
+//        arr[Int(input[1])!] == true ? print(1) : print(0)
+//    case "toggle" :
+//        if arr[Int(input[1])!] == true{
+//            arr[Int(input[1])!] = false
+//        }else{arr[Int(input[1])!] = true}
+//    case "all" :
+//        for i in 0..<21{
+//            arr[i] = true
+//        }
+//    case "empty" :
+//        for i in 0..<21{
+//            arr[i] = false
+//        }
+//    default :
+//        break
+//    }
+//}
+//
+//
+//
+
+
+
