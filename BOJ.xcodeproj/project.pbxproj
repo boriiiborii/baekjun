@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		DB21AFA529E6C1C0003D878A /* 1676.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1676.swift; sourceTree = "<group>"; };
 		DB21AFA729E6C1E0003D878A /* 1463.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1463.swift; sourceTree = "<group>"; };
+		DB21AFAA29E70BE7003D878A /* 11047.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11047.swift; sourceTree = "<group>"; };
 		DB224A2E2974663000EC1478 /* 1181.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1181.swift; sourceTree = "<group>"; };
 		DB224A2F2974692600EC1478 /* 11399.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11399.swift; sourceTree = "<group>"; };
 		DB3813D7295F5F4B0073D143 /* 2231.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2231.swift; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 				DB78FEF1298A62DB00F7B8A8 /* 프로그래머스:크래인인형뽑기.swift */,
 				DBEEF14829C762DD007B54D8 /* 10994.swift */,
 				DBD566FB29DB01A2003A52B5 /* 1813.swift */,
+				DB21AFAA29E70BE7003D878A /* 11047.swift */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
