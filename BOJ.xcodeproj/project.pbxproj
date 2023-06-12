@@ -78,6 +78,7 @@
 		DBDB4EBB2A2E511C0095F1E0 /* choiceOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choiceOrange.swift; sourceTree = "<group>"; };
 		DBE3C03E2A30F64B00E6EF35 /* bestAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestAlbum.swift; sourceTree = "<group>"; };
 		DBEEF14829C762DD007B54D8 /* 10994.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10994.swift; sourceTree = "<group>"; };
+		DBF39D542A37658600C69FC8 /* newsClustering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsClustering.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				DB8C9C2B295323EF00B2FE9F /* main.swift */,
+				DBF39D542A37658600C69FC8 /* newsClustering.swift */,
 				DBE3C03E2A30F64B00E6EF35 /* bestAlbum.swift */,
 				DB21AFA729E6C1E0003D878A /* 1463.swift */,
 				DB21AFA529E6C1C0003D878A /* 1676.swift */,

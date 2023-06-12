@@ -6,16 +6,15 @@
 //
 
 import Foundation
-
+//2차원 배열로 쪼갬
 func solution(_ park: [String], _ routes: [String]) -> [Int] {
     var map = [[String]]()
     for str in park {
         let chars = str.map { String($0) }
         map.append(chars)
     }
-    
+    //S의 위치인덱스를 result에 저장
     var result = [Int]()
-    
     for i in 0..<park.count {
         for j in 0..<park[0].count {
             if map[i][j] == "S" {
@@ -23,15 +22,17 @@ func solution(_ park: [String], _ routes: [String]) -> [Int] {
             }
         }
     }
-    var test = result
     print("첫 스타트 위치: \(result)")
     
     for route in routes {
+        //routes의 op와 distance를 따로 받아옴 (쪼개서)
         test = result
         let split = route.split(separator: " ")
         let op = String(split[0])
         let distance = Int(split[1]) ?? 0
 
+        //이 test변수는 추후 result값을 임시저장하기위해 선언
+        var test = [Int]()
         switch op {
         case "N":
             guard result[0] - distance >= 0 else {continue}
