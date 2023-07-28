@@ -83,6 +83,7 @@
 		DBF054462A72BF02004A3A65 /* 11723.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11723.swift; sourceTree = "<group>"; };
 		DBF39D542A37658600C69FC8 /* newsClustering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsClustering.swift; sourceTree = "<group>"; };
 		DBF4EECD2A73D866006FB3F2 /* 1620.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1620.swift; sourceTree = "<group>"; };
+		DBF4EECE2A73DC37006FB3F2 /* 1764.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1764.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DB8C9C2B295323EF00B2FE9F /* main.swift */,
+				DBF4EECE2A73DC37006FB3F2 /* 1764.swift */,
 				DBF4EECD2A73D866006FB3F2 /* 1620.swift */,
 				DBF054462A72BF02004A3A65 /* 11723.swift */,
 				DBC876B12A38D10F00DA0169 /* failureRate.swift */,
