@@ -1,39 +1,31 @@
-//
-//  2606.swift
-//  BOJ
-//
-//  Created by leehwajin on 2023/08/04.
-//
-
 import Foundation
-//2606 바이러스(인터넷참고)
+//2606 바이러스
+var n = Int(readLine()!)!
+var m = Int(readLine()!)!
+var matrix = Array(repeating: Array(repeating: 0, count: n+1), count: n+1)
 
-let com = Int(readLine()!)!
-let line = Int(readLine()!)!
-
-var network = [Int: [Int]]()
-
-for num in 1...com {
-    network[num] = []
+for _ in 0..<m {
+    let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+    matrix[input[0]][input[1]] = 1
+    matrix[input[1]][input[0]] = 1
 }
 
-for _ in 0..<line {
-    let temp = readLine()!.split(separator: " ").map{Int($0)!}
-    let a = temp[0], b = temp[1]
-    network[a]?.append(b)
-    network[b]?.append(a)
-}
-
-var visited = [Int]()
-
-var stack = [1]
-
-while stack.count != 0 {
-    guard let temp = stack.popLast() else {continue}
-    if !visited.contains(temp){
-        visited.append(temp)
-        guard let temp2 = network[temp] else {continue}
-        stack += temp2
+var visited = Array(repeating: false, count: n+1)
+var queue = [1]
+var index = 0
+var result = 0
+visited[1] = true
+while index < queue.count {
+    var node = queue[index]
+    index += 1
+    
+    for i in 1...n {
+        if visited[i] == false && matrix[i][node] == 1 {
+            visited[i] = true
+            queue.append(i)
+            result += 1
+        }
     }
 }
-print(visited.count-1)
+
+print(result)

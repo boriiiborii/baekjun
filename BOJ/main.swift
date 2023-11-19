@@ -1,45 +1,31 @@
-//
-//  1260.swift
-//  BOJ
-//
-//  Created by leehwajin on 2023/01/09.
-//
-
 import Foundation
-//2178 미로탐색
-let nm = readLine()!.split(separator: " ").map{Int(String($0))!}
-let n = nm[0]
-let m = nm[1]
-let dx = [0,0,1,-1]
-let dy = [1,-1,0,0]
+//2606 바이러스
+var n = Int(readLine()!)!
+var m = Int(readLine()!)!
+var matrix = Array(repeating: Array(repeating: 0, count: n+1), count: n+1)
 
-var map = [[Int]]()
-for _ in 0..<n {
-    map.append(readLine()!.map{Int(String($0))!})
+for _ in 0..<m {
+    let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+    matrix[input[0]][input[1]] = 1
+    matrix[input[1]][input[0]] = 1
 }
 
-var queue: [(x: Int, y: Int, count: Int)] = [(0,0,1)]
+var visited = Array(repeating: false, count: n+1)
+var queue = [1]
 var index = 0
 var result = 0
-
+visited[1] = true
 while index < queue.count {
-    let node = queue[index]
+    var node = queue[index]
     index += 1
     
-    for i in 0..<4 {
-        let nx = node.x + dx[i]
-        let ny = node.y + dy[i]
-        let nCount = node.count + 1
-        
-        if nx >= 0 && ny >= 0 && nx < n && ny < m && map[nx][ny] == 1 {
-            queue.append((nx,ny,nCount))
-            map[nx][ny] = 0
-            result = nCount
-            if nx == n-1 && ny == m-1 {
-                index = queue.count
-                break
-            }
+    for i in 1...n {
+        if visited[i] == false && matrix[i][node] == 1 {
+            visited[i] = true
+            queue.append(i)
+            result += 1
         }
     }
 }
+
 print(result)
