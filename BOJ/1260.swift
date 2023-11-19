@@ -15,39 +15,34 @@ let v = nmv[2]
 var visited = Array(repeating: false, count: n+1)
 var matrix = Array(repeating: Array(repeating: 0, count: n+1), count: n+1)
 
-for _ in 0..<m { //그래프 2차원배열로 표현
-    let nums = readLine()!.split(separator: " ").map{ Int(String($0))! }
-    matrix[nums[0]][nums[1]] = 1
-    matrix[nums[1]][nums[0]] = 1
+for i in 0..<m {
+    let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+    matrix[input[0]][input[1]] = 1
+    matrix[input[1]][input[0]] = 1
 }
 
-func dfs(_ v: Int) {
-    visited[v] = true
-    print(v, terminator: " ")
-    for i in 1..<n+1 {
-        if visited[i] == false && matrix[v][i] == 1 {
-            dfs(i)
-        }
-    }
-}
-
-func bfs(_ v: Int){
-    var que = [Int]()
-    visited[v] = false
-    que.append(v)
-    
-    while !que.isEmpty{
-        let vv = que.removeFirst()
-        print(vv,terminator: " ")
-        for i in 1...n{
-            if visited[i] == true && matrix[vv][i] == 1{
-                que.append(i)
-                visited[i] = false
+func bfs(_ start :Int) {
+    var queue = [start]
+    while !queue.isEmpty {
+        var node = queue.removeFirst()
+        visited[node] = true
+        print(node)
+        for i in 1...n {
+            if visited[i] == false && matrix[i][node] == 1 {
+                visited[i] = true
+                queue.append(i)
             }
         }
     }
 }
 
-dfs(v)
-print("")
-bfs(v)
+func dfs(_ start: Int) {
+    visited[start] = true
+    print(start, terminator: " ")
+    for i in 1..<n+1 {
+        if visited[i] == false && matrix[start][i] == 1 {
+            dfs(i)
+        }
+    }
+}
+
