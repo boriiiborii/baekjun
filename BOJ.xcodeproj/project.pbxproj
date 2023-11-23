@@ -69,6 +69,7 @@
 		DB72B4BB2A34B41F0025186F /* walkingInPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkingInPark.swift; sourceTree = "<group>"; };
 		DB78FEF1298A62DB00F7B8A8 /* 프로그래머스:크래인인형뽑기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스:크래인인형뽑기.swift"; sourceTree = "<group>"; };
 		DB878AE52A867E06007950B7 /* 2161.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2161.swift; sourceTree = "<group>"; };
+		DB8BC8662B0F5FDA00A322CB /* tenNetworkCodingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tenNetworkCodingGame.swift; sourceTree = "<group>"; };
 		DB8C9C28295323EF00B2FE9F /* BOJ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BOJ; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8C9C2B295323EF00B2FE9F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DB8C9C322953243800B2FE9F /* 10817.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10817.swift; sourceTree = "<group>"; };
@@ -254,6 +255,7 @@
 				DBF66B8B2AB9C8BF0093DF8C /* 18870.swift */,
 				DBB8974C2ADD7A5C00945AD6 /* 12851.swift */,
 				DB03AE382B0E2E8900361ADE /* 7576.swift */,
+				DB8BC8662B0F5FDA00A322CB /* tenNetworkCodingGame.swift */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
