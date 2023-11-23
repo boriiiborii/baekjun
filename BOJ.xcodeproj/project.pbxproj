@@ -70,6 +70,7 @@
 		DB78FEF1298A62DB00F7B8A8 /* 프로그래머스:크래인인형뽑기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "프로그래머스:크래인인형뽑기.swift"; sourceTree = "<group>"; };
 		DB878AE52A867E06007950B7 /* 2161.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2161.swift; sourceTree = "<group>"; };
 		DB8BC8662B0F5FDA00A322CB /* tenNetworkCodingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tenNetworkCodingGame.swift; sourceTree = "<group>"; };
+		DB8BC8672B0F65DA00A322CB /* 21736.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 21736.swift; sourceTree = "<group>"; };
 		DB8C9C28295323EF00B2FE9F /* BOJ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BOJ; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8C9C2B295323EF00B2FE9F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DB8C9C322953243800B2FE9F /* 10817.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10817.swift; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				DB8C9C2B295323EF00B2FE9F /* main.swift */,
+				DB8BC8672B0F65DA00A322CB /* 21736.swift */,
 				DBE088072B09DF0E0034E04F /* 신규아이디추천.swift */,
 				DB3467992B03975900A6E64B /* 캐시.swift */,
 				DBD1A0442B020AF800F3B724 /* 괄호회전하기.swift */,
