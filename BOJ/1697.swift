@@ -47,3 +47,47 @@ func bfs() {
 }
 
 bfs()
+----------------------------------------------------------------------------------------------------------------------------------------
+//20231224
+import Foundation
+//1697 숨바꼭질
+
+let nk = readLine()!.split(separator: " ").map{Int(String($0))!}
+let n = nk[0]
+let k = nk[1]
+var visited = Array(repeating: false, count: 100001)
+let dx = [1, -1, 2]
+
+func bfs(start: Int, end:Int) -> Int {
+    var queue: [(place:Int, depth:Int)] = [(start,0)]
+    var index = 0
+    visited[start] = true
+    
+    if start == end {
+        return 0
+    }
+    
+    while index < queue.count {
+        let node = queue[index]
+        index += 1
+        
+        for i in 0..<3 {
+            var newPlace = 0
+            if i == 2 {
+                newPlace = node.place*dx[i]
+            }else {
+                newPlace = node.place+dx[i]
+            }
+            if newPlace == end {
+                return node.depth+1
+            }
+            if newPlace >= 0 && newPlace <= 100000 && !visited[newPlace]{
+                visited[newPlace] = true
+                queue.append((newPlace,node.depth+1))
+            }
+        }
+    }
+    return 0
+}
+
+print(bfs(start: n, end: k))
