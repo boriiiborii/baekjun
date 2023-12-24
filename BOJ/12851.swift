@@ -59,3 +59,44 @@ while (index < queue.count) {
         //print(queue)
     }
 }
+
+
+----------------
+import Foundation
+//12851 숨바꼭질
+
+let len = 100000
+let nm = readLine()!.split(separator: " ").map{Int(String($0))!}
+let (n,k) = (nm[0], nm[1])
+
+var sec = Array(repeating: -1, count: len+1)
+var cnt = Array(repeating: 0, count: len+1)
+
+func bfs(_ x: Int) {
+    var queue = [x]
+    var index = 0
+    sec[x] = 0
+    cnt[x] = 1
+    
+    while index < queue.count {
+        let node = queue[index]
+        index += 1
+        
+        for nx in [node+1, node-1, node*2] {
+            if (0...len).contains(nx){
+                if sec[nx] == -1 {
+                    sec[nx] = sec[node]+1
+                    cnt[nx] = cnt[node]
+                    queue.append(nx)
+                }else if sec[node]+1 == sec[nx] {
+                    cnt[nx] += cnt[node]
+                }
+            }
+        }
+    }
+}
+
+bfs(n)
+print(sec[k])
+print(cnt[k])
+
