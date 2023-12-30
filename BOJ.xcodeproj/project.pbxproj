@@ -57,6 +57,7 @@
 		DB4F56CF2B3F458A00FB9E3F /* 15649.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15649.swift; sourceTree = "<group>"; };
 		DB4F56D02B3F483E00FB9E3F /* 15650.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15650.swift; sourceTree = "<group>"; };
 		DB4F56D12B3FB06B00FB9E3F /* 15651.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15651.swift; sourceTree = "<group>"; };
+		DB4F56D22B3FB38800FB9E3F /* 15652.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15652.swift; sourceTree = "<group>"; };
 		DB555A7A2954676D00D531F3 /* 4344.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4344.swift; sourceTree = "<group>"; };
 		DB56C8C829FFFDB7002BECA9 /* 1037.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1037.swift; sourceTree = "<group>"; };
 		DB5ACD632AA864C90054CA15 /* 1541.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1541.swift; sourceTree = "<group>"; };
@@ -270,6 +271,7 @@
 				DB4F56CF2B3F458A00FB9E3F /* 15649.swift */,
 				DB4F56D02B3F483E00FB9E3F /* 15650.swift */,
 				DB4F56D12B3FB06B00FB9E3F /* 15651.swift */,
+				DB4F56D22B3FB38800FB9E3F /* 15652.swift */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";
