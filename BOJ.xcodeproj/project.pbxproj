@@ -103,6 +103,7 @@
 		DBB61C3E29699FEB00E5E08F /* 1874.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1874.swift; sourceTree = "<group>"; };
 		DBB61C3F2969D96400E5E08F /* DFS:BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DFS:BFS.swift"; sourceTree = "<group>"; };
 		DBB8974C2ADD7A5C00945AD6 /* 12851.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12851.swift; sourceTree = "<group>"; };
+		DBBB8D722B96277300107F2A /* 4153.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4153.swift; sourceTree = "<group>"; };
 		DBBF12882AD02FB5000508A2 /* 11725.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11725.swift; sourceTree = "<group>"; };
 		DBBFE2A62A7E8C6100FC6040 /* 11726.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11726.swift; sourceTree = "<group>"; };
 		DBBFE2A72A7E9FB100FC6040 /* 11727.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11727.swift; sourceTree = "<group>"; };
@@ -126,6 +127,8 @@
 		DBDB4EBB2A2E511C0095F1E0 /* choiceOrange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choiceOrange.swift; sourceTree = "<group>"; };
 		DBE088072B09DF0E0034E04F /* 신규아이디추천.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "신규아이디추천.swift"; sourceTree = "<group>"; };
 		DBE3C03E2A30F64B00E6EF35 /* bestAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestAlbum.swift; sourceTree = "<group>"; };
+		DBE5F5D12B8C5FA400802780 /* 1932.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1932.swift; sourceTree = "<group>"; };
+		DBE5F5D22B8C6E0400802780 /* 1904 .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1904 .swift"; sourceTree = "<group>"; };
 		DBEEF14829C762DD007B54D8 /* 10994.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10994.swift; sourceTree = "<group>"; };
 		DBF054462A72BF02004A3A65 /* 11723.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11723.swift; sourceTree = "<group>"; };
 		DBF39D542A37658600C69FC8 /* newsClustering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsClustering.swift; sourceTree = "<group>"; };
@@ -276,6 +279,9 @@
 				DB4F56D22B3FB38800FB9E3F /* 15652.swift */,
 				DB4F56D32B3FB70200FB9E3F /* 15654.swift */,
 				DB6744362B4B6C5D003E397D /* 다트게임.swift */,
+				DBE5F5D12B8C5FA400802780 /* 1932.swift */,
+				DBE5F5D22B8C6E0400802780 /* 1904 .swift */,
+				DBBB8D722B96277300107F2A /* 4153.swift */,
 			);
 			path = BOJ;
 			sourceTree = "<group>";

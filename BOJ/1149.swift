@@ -7,8 +7,6 @@
 
 import Foundation
 //1149 RGB거리
-var lastIndex: Int?
-
 let n = Int(readLine()!)!
 var cost = Array(repeating: [0,0,0], count: n+1)
 for i in 1...n {
