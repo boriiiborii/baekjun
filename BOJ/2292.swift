@@ -5,10 +5,8 @@
 //  Created by leehwajin on 2022/12/29.
 //
 import Foundation
-//2292 벌집7
+//2292 벌집
 let num = Int(readLine()!)!
-
-
 
 var range = 2
 var plus = 0
@@ -29,3 +27,24 @@ if num == 1{
         }
     }
 }
+
+//2292 벌집
+var input = Int(readLine()!)!
+var count = 1
+
+if input == 1{
+    print(1)
+    exit(0)
+}
+
+input -= 1
+var i = 1
+
+while input>0 {
+    input -= 6*i
+    count += 1
+    i += 1
+}
+
+print(count)
+
