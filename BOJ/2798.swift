@@ -26,3 +26,21 @@ for i in 0..<num.count-2{
 }
 
 print(nb)
+
+//2798 블랙잭
+let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+let m = input[1]
+var cards = readLine()!.split(separator: " ").map{Int(String($0))!}
+var result = 0
+cards.sort()
+for i in 0..<cards.count-2 {
+    for j in i+1..<cards.count-1 {
+        for k in j+1..<cards.count {
+            if cards[i]+cards[j]+cards[k] <= m {
+                result = max(cards[i]+cards[j]+cards[k], result)
+            }
+        
+        }
+    }
+}
+print(result)
