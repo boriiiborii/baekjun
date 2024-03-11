@@ -1,22 +1,14 @@
 //
-//  main.swift
+//  2751.swift
 //  BOJ
 //
-//  Created by leehwajin on 2022/12/26.
+//  Created by leehwajin on 2024/03/11.
 //
 
 import Foundation
 //2751
-
-let timesinput = Int(readLine()!)!
-var arr: Array<Int> = []
-
-
-for i in 0...timesinput-1{
-    let input = Int(readLine()!)!
-    arr.insert(input, at: i)
+var arr = [Int]()
+for _ in 0..<Int(readLine()!)! {
+    arr.append(Int(readLine()!)!)
 }
-arr.sort()
-arr.map{
-    return print($0)
-}
+Array(Set(arr)).sorted().forEach{print($0)}
