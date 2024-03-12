@@ -16,3 +16,18 @@ arr.sort{Int($0[0])! < Int($1[0])!}
 for i in arr{
     print(i[0], i[1])
 }
+
+//import Foundation
+//10814
+var arr = [[Int]]()
+for _ in 0..<Int(readLine()!)! {
+    arr.append(readLine()!.split(separator: " ").map{Int(String($0))!})
+}
+let result = arr.sorted{$0[0] != $1[0] ? $0[0] < $1[0] : $0[1] < $1[1]}
+for i in 0..<result.count {
+    for j in 0..<2 {
+        print(result[i][j], terminator: " ")
+    }
+    print("")
+}
+
