@@ -17,3 +17,16 @@ for i in arr{
     print(i[0], i[1])
 }
 
+
+import Foundation
+//10814
+var arr = [[String]]()
+for _ in 0..<Int(readLine()!)! {
+    arr.append(readLine()!.split(separator: " ").map{String($0)})
+}
+
+let result = arr.sorted{Int($0[0])! < Int($1[0])!}
+
+for i in result {
+    print("\(i[0]) \(i[1])")
+}
