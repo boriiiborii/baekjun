@@ -36,3 +36,44 @@ for i in outArr{
     if i != outArr.last{print(", ", terminator: "")}
 }
 print(">")
+
+import Foundation
+//11866
+var arr = [[Int]]()
+let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+let num = input[1]
+for i in 1...input[0] {
+    let ele = [i, 1]
+    arr.append(ele)
+}
+
+var count = 0
+var result = [Int]()
+Outer: while arr.count != result.count {
+    for i in 0..<arr.count {
+        if arr[i][1] == 1 {
+            count += 1
+        }
+        if count == num {
+            result.append(arr[i][0])
+            arr[i][1] = 0
+            count = 0
+        }
+        if arr.count == result.count {
+            break Outer
+        }
+    }
+}
+
+var resultStr = "<"
+
+for i in result {
+    if (result.last != i) {
+        resultStr += String(i)
+        resultStr += ", "
+    }else {
+        resultStr += String(i)
+        
+    }
+}
+print(resultStr+">")
