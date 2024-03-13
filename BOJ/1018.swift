@@ -1,37 +1,49 @@
 //
-//  main.swift
+//  1018.swift
 //  BOJ
 //
-//  Created by leehwajin on 2022/12/26.
+//  Created by leehwajin on 2024/03/13.
 //
 
 import Foundation
 //1018
+let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+var ex1 = Array(repeating: Array(repeating: "W", count: input[1]), count: input[0])
+var ex2 = Array(repeating: Array(repeating: "B", count: input[1]), count: input[0])
+var arr = [[String]]()
 
-let input = readLine()!.split(separator: " ").map { Int(String($0))! }
-var twoArr = [[String]](repeating: Array(repeating: "", count: input[1]), count: input[0])
-var count = 0
+for _ in 0..<input[0] {
+    arr.append(readLine()!.split(separator: "").map{String($0)})
+}
 
-for i in 0...input[0]{
-    for j in 0...input[1]{
-        twoArr[i][j] = readLine()!
+for i in 0..<8 {
+    for j in 0..<8 {
+        if (i+j) % 2 != 0 {
+            ex1[i][j] = "B"
+            ex2[i][j] = "W"
+        }
     }
 }
 
-for i in 0...input[0]{
-    for j in 0...input[1]{
-        guard twoArr[i][(abs(j-i)%2 == 0)] != "B") else{continue}
-        twoArr(abs(j-i)%2 == 0) = "B"
-        count += 1
-        guard twoArr[i][(abs(j-i)%2 != 0)] != "W" else{continue}
-        twoArr(abs(j-i)%2 == 0) = "W"
-        count += 1
+var result = 999999
+for n in 0..<input[0]-7 {
+    for m in 0..<input[1]-7 {
+        var count1 = 0
+        var count2 = 0
+        for i in n..<n+8 {
+                    for j in m..<m+8 {
+                        if ex1[i-n][j-m] != arr[i][j] {
+                            count1 += 1
+                        }
+                        if ex2[i-n][j-m] != arr[i][j] {
+                            count2 += 1
+                        }
+                    }
+                }
+        if result > min(count1, count2) {
+            result = min(count1, count2)
         }
-        }
-    s
-    
-        
-        
-        
     }
 }
+
+print(result)
