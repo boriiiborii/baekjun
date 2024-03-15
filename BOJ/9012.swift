@@ -1,31 +1,31 @@
 //
-//  main.swift
+//  9012.swift
 //  BOJ
 //
-//  Created by leehwajin on 2022/12/29.
+//  Created by leehwajin on 2024/03/15.
 //
 
 import Foundation
-
-var times = Int(readLine()!)!
-
-OUTTER: for _ in 0..<times{
-    
-    var input = readLine()!
-    var inputArr:Array<Character> = []
-
-INNER: for i in input{
+//9012
+OUTER: for _ in 0..<Int(readLine()!)! {
+    let input = readLine()!
+    var stack = [Character]()
+    for i in input {
         if i == "(" {
-            inputArr.append(contentsOf: "(")
-        }else{
-            if(inputArr.isEmpty){
+            stack.append(i)
+        }else {
+            if stack.last == "(" {
+                stack.removeLast()
+            }else {
                 print("NO")
-                continue OUTTER
-            }else{
-                inputArr.removeLast()
+                continue OUTER
             }
         }
     }
-    inputArr.isEmpty ? print("YES") : print("NO")
-}
+    if stack.isEmpty {
+        print("YES")
+    }else {
+        print("NO")
+    }
 
+}
