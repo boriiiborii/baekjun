@@ -63,3 +63,40 @@ while true{
         print("no")
     }
 }
+
+
+//4949
+
+Outer: while true {
+    let input = readLine()!
+    if input == "." {
+        exit(0)
+    }
+    var stack = [Character]()
+    for i in input {
+        if i == "(" {
+            stack.append(i)
+        }else if i == "[" {
+            stack.append(i)
+        }else if i == ")" {
+            if stack.last == "(" {
+                stack.removeLast()
+            }else {
+                print("no")
+                continue Outer
+            }
+        }else if i == "]" {
+            if stack.last == "[" {
+                stack.removeLast()
+            }else {
+                print("no")
+                continue Outer
+            }
+        }
+    }
+    if stack.isEmpty {
+        print("yes")
+    }else {
+        print("no")
+    }
+}
