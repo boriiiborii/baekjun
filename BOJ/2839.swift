@@ -61,3 +61,35 @@ else{
             }
         }
 }
+
+
+import Foundation
+//2839
+let input = Int(readLine()!)!
+if input <= 5 {
+    if input == 3 || input == 5 {
+        print(1)
+    }else {
+        print(-1)
+    }
+}else {
+    var dp = Array(repeating: -1, count: input+1)
+    dp[3] = 1
+    dp[5] = 1
+    var temp = 0
+    for i in 6...input {
+        if dp[i-3] == -1{
+            if dp[i-5] == -1 {
+                dp[i] = -1
+            }else {
+                dp[i] = dp[i-5]+1
+            }
+        }else if dp[i-5] == -1{
+                dp[i] = dp[i-3]+1
+        }else {
+            dp[i] = min(dp[i-3], dp[i-5])+1
+        }
+    }
+    print(dp[input])
+
+}
