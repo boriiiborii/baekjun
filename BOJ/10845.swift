@@ -47,3 +47,45 @@ for _ in 0..<times{
         
     }
 }
+
+
+//10845
+var arr = [Int]()
+for _ in 0..<Int(readLine()!)! {
+    let input = readLine()!.split(separator: " ").map{String($0)}
+    
+    switch input[0] {
+    case "push":
+        arr.append(Int(input[1])!)
+    case "pop":
+        if !arr.isEmpty {
+            print(arr.removeFirst())
+        }else {
+            print(-1)
+        }
+    case "size":
+        print(arr.count)
+    case "empty":
+        if arr.isEmpty {
+            print(1)
+        }else {
+            print(0)
+        }
+    case "front":
+        if arr.isEmpty {
+            print(-1)
+        }else {
+            print(arr.first!)
+        }
+    case "back":
+        if arr.isEmpty {
+            print(-1)
+        }else {
+            print(arr.last!)
+        }
+    default:
+        break
+    }
+    
+}
+
