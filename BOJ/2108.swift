@@ -46,3 +46,29 @@ print(mid)
 print(bin)
 print(range)
 
+
+import Foundation
+//2108
+var arr = [Int]()
+var dic = [Int:Int]()
+let times = Int(readLine()!)!
+for _ in 0..<times {
+    let input = Int(readLine()!)!
+    arr.append(input)
+    dic[input, default: 0] += 1
+}
+print(Int(round(Double(arr.reduce(0,+))/Double(arr.count))))
+print(arr.sorted()[arr.count/2])
+let sortedDic = dic.sorted { $0.value == $1.value ? $0.key < $1.key : $0.value > $1.value }
+//print(sortedDic)
+let maxValue = sortedDic.first!.value
+if times == 1 {
+    print(arr[0])
+}else if sortedDic[1].value == maxValue{
+    let result = sortedDic.filter{$0.value == maxValue}.sorted{$0.key < $1.key}[1]
+    print(result.key)
+}else {
+    print(sortedDic[0].key)
+}
+
+print(arr.max()!-arr.min()!)
