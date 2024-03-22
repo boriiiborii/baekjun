@@ -20,3 +20,15 @@ for i in 0..<input.count{
 }
 
 print(sum)
+
+
+//11399
+let _ = Int(readLine()!)!
+var arr = readLine()!.split(separator: " ").map{Int(String($0))!}
+arr.sort()
+var map = Array(repeating: 0, count : arr.count)
+map[0] = arr[0]
+for i in 1..<arr.count {
+    map[i] = map[i-1] + arr[i]
+}
+print(map.reduce(0,+))
