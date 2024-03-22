@@ -33,3 +33,23 @@ for _ in 0..<m {
     }
 }
 
+import Foundation
+//1620
+let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+var dic = [Int: String]()
+var reverseDic = [String: Int]()
+
+for i in 1...input[0] {
+    let name = readLine()!
+    dic[i] = name
+    reverseDic[name] = i
+}
+
+for _ in 0..<input[1] {
+    let q = readLine()!
+    if let number = Int(q), let name = dic[number] {
+        print(name)
+    } else if let number = reverseDic[q] {
+        print(number)
+    }
+}
