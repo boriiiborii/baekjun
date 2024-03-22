@@ -28,3 +28,24 @@ while(k>0){
 
 print(count)
 
+import Foundation
+//11047
+let nk = readLine()!.split(separator: " ").map{Int(String($0))!}
+var k = nk[1]
+var money = [Int]()
+for _ in 0..<nk[0] {
+    money.append(Int(readLine()!)!)
+}
+money = money.sorted(by: >)
+var count = 0
+for i in money {
+    if k >= i {
+        let num = k/i
+        k -= num*i
+        count += num
+    }
+    if k == 0 {
+        print(count)
+        break
+    }
+}
