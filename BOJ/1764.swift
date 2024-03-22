@@ -27,4 +27,23 @@ for i in 0..<sortedArray.count {
 }
 
 
+import Foundation
+//1764
+let nm = readLine()!.split(separator: " ").map{Int(String($0))!}
+var dic = [String : Int]()
+var result = [String]()
+for _ in 0..<nm[0] {
+    dic[readLine()!] = 0
+}
+for _ in 0..<nm[1] {
+    let input = readLine()!
+    if dic[input] != nil {
+        result.append(input)
+    }
+}
+
+print(result.count)
+for name in result.sorted() {
+    print(name)
+}
 
