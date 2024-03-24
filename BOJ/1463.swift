@@ -48,3 +48,24 @@ print(arr[input])
 //}
 //print(arr[input])
 //
+
+import Foundation
+//1463 나참 이게 왜 시간초과야?
+let input = Int(readLine()!)!
+var dic = [0:0,1:0,2:1,3:1]
+if input <= 3 {
+    print(dic[input]!)
+}else {
+    for i in 4...input {
+        if (i%3 == 0) && (i%2 == 0) {
+            dic[i] = min(dic[i/2]!, dic[i/3]!, dic[i-1]!)+1
+        }else if (i%3 == 0) {
+            dic[i] = min(dic[i/3]!, dic[i-1]!)+1
+        }else if (i%2 == 0) {
+            dic[i] = min(dic[i/2]!, dic[i-1]!)+1
+        }else {
+            dic[i] = dic[i-1]!+1
+        }
+    }
+    print(dic[input]!)
+}
