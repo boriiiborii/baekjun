@@ -25,3 +25,17 @@ for _ in 0..<m {
     print(dic[site]!)
 }
 
+
+
+import Foundation
+//17219
+let nm = readLine()!.split(separator: " ").map{Int(String($0))!}
+var dic = [String: String]()
+for _ in 0..<nm[0] {
+    let input = readLine()!.split(separator: " ").map{String($0)}
+    dic[input[0]] = input[1]
+}
+for _ in 0..<nm[1] {
+    let input = readLine()!
+    print(dic[input] ?? "")
+}
