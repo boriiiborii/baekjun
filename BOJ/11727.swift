@@ -20,3 +20,16 @@ if input < 3 {
     }
     print(arr[input])
 }
+
+import Foundation
+//11727
+let input = Int(readLine()!)!
+var arr = [0, 1, 3]
+if input < arr.count {
+    print(arr[input])
+}else {
+    for i in 3...input {
+        arr.append((arr[i-1]+arr[i-2]+arr[i-2])%10007)
+    }
+    print(arr[input])
+}

@@ -21,3 +21,13 @@ for _ in 0..<n[1] {
     result = arr[end] - arr[start-1]
     print(result)
 }
+
+--------------------
+(이 코드는 시간초과가 남)
+import Foundation
+let times = readLine()!.split(separator: " ").map{Int(String($0))!}[1]
+let arr = readLine()!.split(separator: " ").map{Int(String($0))!}
+for _ in 0..<times {
+    let input = readLine()!.split(separator: " ").map{Int(String($0))!}
+    print((arr[input[0]-1...input[1]-1]).reduce(0,+))
+}
