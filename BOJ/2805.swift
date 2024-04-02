@@ -40,3 +40,27 @@ func logic(left: Int, right: Int) {
 }
 
 print(result)
+
+
+import Foundation
+//2805
+let nm = readLine()!.split(separator: " ").map{Int(String($0))!}
+let m = nm[1]
+let trees = readLine()!.split(separator: " ").map{Int(String($0))!}
+var bottom = 0
+var top = trees.max()!
+while bottom <= top {
+    let mid = (bottom + top) / 2
+    var sum = 0
+    for i in trees {
+        if i > mid {
+            sum += i-mid
+        }
+    }
+    if sum < m {
+        top = mid-1
+    }else {
+        bottom = mid + 1
+    }
+}
+print(bottom - 1)
